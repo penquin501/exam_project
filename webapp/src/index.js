@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get("/a", function(req, res) {
+app.get("/", function(req, res) {
   var a = "324";
   var b = "581";
   var arr1 = [];
@@ -60,11 +60,14 @@ app.get("/a", function(req, res) {
     parseInt(splArr[splArr.length - 8][0]) +
     parseInt(splArr[splArr.length - 9][1]);
 
-  for (i = splArr.length - 1; i >= 0; i--) {
-    var carry = 0;
-    // console.log(i);
-    // var sum=
-  }
+  // var sum=0;
+  // for (i = splArr.length - 1; i >= 0; i--) {
+  //   var carry = 0;
+  //   var round = 0;
+  //   sum += parseInt(splArr[splArr.length - i][1])
+  //   carry=sum%10;
+  //   round=sum/10;
+  // }
   // console.log(sum);
 
   // 5.รวม str แต่ละมาเรียงกัน = result
